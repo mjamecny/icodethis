@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Profile Dropdown</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="user-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-bell"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+          ></path>
+          <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+        </svg>
+        <img
+          class="profile-photo profile-photo--small"
+          src="https://randomuser.me/api/portraits/men/98.jpg"
+          alt="profile photo"
+        />
+      </div>
+      <div class="dropdown-menu arrow-top">
+        <div class="dropdown-menu__account-box">
+          <img
+            class="profile-photo profile-photo--medium"
+            src="https://randomuser.me/api/portraits/men/98.jpg"
+            alt="profile photo"
+          />
+          <div class="account-info">
+            <p class="account-name">John Doe</p>
+            <p class="account-email">jJ6Qs@example.com</p>
+            <button class="btn">Account Settings</button>
+          </div>
+        </div>
+        <div class="dropdown-menu__email-list">
+          <div class="dropdown-menu__email-item">
+            <div
+              class="dropdown-menu__email-logo dropdown-menu__email-logo--green"
+            >
+              JD
+            </div>
+            <div class="account-info">
+              <p class="account-name">John Doe</p>
+              <p class="account-email">support@email.com</p>
+            </div>
+          </div>
+          <div class="dropdown-menu__email-item">
+            <div
+              class="dropdown-menu__email-logo dropdown-menu__email-logo--blue"
+            >
+              JD
+            </div>
+            <div class="account-info">
+              <p class="account-name">John Doe</p>
+              <p class="account-email">accounting@email.com</p>
+            </div>
+          </div>
+          <div class="dropdown-menu__email-item">
+            <div
+              class="dropdown-menu__email-logo dropdown-menu__email-logo--purple"
+            >
+              JD
+            </div>
+            <div class="account-info">
+              <p class="account-name">John Doe</p>
+              <p class="account-email">hello@email.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-menu__action-box">
+          <button class="btn-add">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-plus"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 5l0 14"></path>
+              <path d="M5 12l14 0"></path>
+            </svg>
+          </button>
+          <button class="btn-logout">Sign Out</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  background-color: #191c38;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 40%;
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 1.8rem;
+}
+
+.card {
+  padding: 4.8rem 4.2rem;
+  color: #211b41;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.card__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.card-pricing-based {
+  align-self: start;
+  position: relative;
+}
+.card-pricing-based::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-color: #3457dd;
+  z-index: -10;
+}
+
+.card-offers {
+  position: relative;
+}
+
+.card-offers::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  height: 50rem;
+  width: 50rem;
+  border-radius: 50%;
+  background-color: #3457dd;
+  z-index: -10;
+}
+
+.container {
+  min-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  width: 75%;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin-top: 4.8rem;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  list-style: none;
+  margin-top: 3.2rem;
+}
+
+.card__feature {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.checkmark-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fd;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.checkmark-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.items {
+  margin-top: 4.8rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.8rem 0;
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid #f2f1f8;
+}
+
+.item h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.item p {
+  font-size: 1.6rem;
+}
+
+.btn {
+  margin-top: 3.2rem;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #3457dd;
+  cursor: pointer;
+}

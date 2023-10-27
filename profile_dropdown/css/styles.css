@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #3e3c46;
+  color: #dbdae0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 40rem;
+  height: 60rem;
+  padding: 3.2rem 4.8rem;
+  background-color: #393741;
+  border-radius: 6px;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.user-menu svg {
+  color: #9b9aa0;
+  cursor: pointer;
+}
+
+.profile-photo {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-photo--small {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.profile-photo--medium {
+  width: 6.2rem;
+  height: 6.2rem;
+}
+
+.dropdown-menu {
+  background-color: #42414a;
+  border-radius: 6px;
+  padding: 2.4rem;
+
+  display: none;
+  margin-top: 1.6rem;
+  position: relative;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu.arrow-top:after {
+  content: " ";
+  position: absolute;
+  right: 9px;
+  top: -9px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid #42414a;
+}
+
+.dropdown-menu--open {
+  display: block;
+}
+
+.dropdown-menu__account-box {
+  display: flex;
+  gap: 2.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 2px solid #3f3d47;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.account-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.account-email {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #85838d;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.8rem 2.4rem;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(to right, #f49b74, #e88b42);
+  cursor: pointer;
+}
+
+.dropdown-menu__email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+.dropdown-menu__email-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.dropdown-menu__email-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.dropdown-menu__email-logo--green {
+  background-color: #76cdb7;
+}
+
+.dropdown-menu__email-logo--blue {
+  background-color: #769bce;
+}
+
+.dropdown-menu__email-logo--purple {
+  background-color: #bf75cb;
+}
+
+.dropdown-menu__action-box {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-add {
+  width: 4.4rem;
+  height: 4.4rem;
+  color: #fff;
+  border: 2px dashed #393741;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-add:hover::before {
+  position: absolute;
+  bottom: -36px;
+  left: -38px;
+  padding: 0.8rem 1.2rem;
+  content: "Add account";
+  font-size: 1.2rem;
+  color: #a2a1a8;
+  width: 10rem;
+  background-color: #2d2d31;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.dropdown-menu.arrow-top:after {
+  content: " ";
+  position: absolute;
+  right: 9px;
+  top: -9px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid #42414a;
+}
+
+.btn-logout {
+  font-family: inherit;
+  padding: 0.8rem 3.2rem;
+  border: 2px solid #393741;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}

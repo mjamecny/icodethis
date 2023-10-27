@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  height: 100vh;
+  background-color: #292240;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 40rem;
+  background-color: #231f39;
+  border-radius: 5px;
+}
+
+.pro-tag {
+  display: inline-block;
+  font-size: 1.4rem;
+  background-color: #fbba07;
+  color: #231f39;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.4rem 1.2rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b7b6d0;
+  padding: 1.6rem;
+}
+
+.profile-card__photo {
+  margin-top: 1.2rem;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #05becb;
+  padding: 0.8rem;
+}
+
+.profile-card__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2.4rem;
+}
+
+.profile-card__city {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  color: #9495a9;
+}
+
+.profile-card__job {
+  width: 50%;
+  color: #9495a9;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 1.2rem;
+}
+
+.profile-card__button-box {
+  margin-top: 2.4rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: 1px solid #05becb;
+  border-radius: 5px;
+
+  background-color: #05becb;
+  padding: 1.6rem 3.2rem;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #05becb;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: #05becb;
+}
+
+.skills-card {
+  margin-top: 3.2rem;
+  background-color: #1e1a36;
+  padding: 1.6rem;
+}
+
+.skills-card__title {
+  font-size: 1.2rem;
+  color: #7c7890;
+  text-transform: uppercase;
+}
+
+.skills-card__list {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.skills-card__item {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6a6783;
+  border: 1px solid #2d2946;
+  border-radius: 4px;
+}
